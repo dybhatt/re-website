@@ -35,7 +35,7 @@
   "@type": "SoftwareApplication",
   "name": "Re",
   "applicationCategory": "HealthApplication",
-  "operatingSystem": "iOS, Android",
+  "operatingSystem": "iOS",
   "url": "https://myrewellness.com/"
 }
 </script>
@@ -59,8 +59,8 @@
     <h1>Re: you, tomorrow.</h1>
     <p class="dek">You didn't fail. You just need a reminder — and a partner that never keeps score.</p>
     <div class="badge-row">
-      <span class="store-badge soon">Download on the App Store — coming soon</span>
-      <span class="store-badge soon">Get it on Google Play — coming soon</span>
+      <!-- TODO: swap href="#" for the real https://apps.apple.com/... link once Re is live, and drop the "soon" class -->
+      <a class="store-badge soon" href="#">Download on the App Store — coming soon</a>
     </div>
     <div class="sunrise-bar"></div>
   </section>
@@ -70,8 +70,29 @@
     <div class="attrib">— the whole idea</div>
   </section>
 
+  <section class="value-props wrap">
+    <div class="section-head"><h2>Why Re</h2></div>
+    <div class="value-grid">
+      <div class="value-item">
+        <span class="v-num">01</span>
+        <h3>Missing a day doesn't reset anything</h3>
+        <p>No punitive streaks, no shame spiral. Re keeps the count as information — never a scoreboard you can lose.</p>
+      </div>
+      <div class="value-item">
+        <span class="v-num">02</span>
+        <h3>See what's actually working</h3>
+        <p>Correlate your supplement logs with how you actually felt — energy, focus, sleep. Patterns, not guesses.</p>
+      </div>
+      <div class="value-item">
+        <span class="v-num">03</span>
+        <h3>Built for real routines</h3>
+        <p>For the days that go well and the days that don't. One list, one tap, no guilt either way.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="features wrap">
-    <h2>What Re actually does</h2>
+    <h2>What's inside the app</h2>
     <div class="feature-grid">
       <div class="feature-card">
         <span class="tag">Today</span>
@@ -119,10 +140,9 @@
 
   <section class="cta wrap">
     <h2>Start tomorrow. Or today.</h2>
-    <p>Re launches soon on iOS and Android.</p>
+    <p>Re launches soon on iOS.</p>
     <div class="badge-row">
-      <span class="store-badge soon">Download on the App Store — coming soon</span>
-      <span class="store-badge soon">Get it on Google Play — coming soon</span>
+      <a class="store-badge soon" href="#">Download on the App Store — coming soon</a>
     </div>
   </section>
 </main>
