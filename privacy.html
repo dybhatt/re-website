@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — Re</title>
+<meta name="description" content="Re's privacy policy: what we collect, how we use it, and your rights over your data." />
+<link rel="canonical" href="https://myrewellness.com/privacy.html" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="/">re<span>:</span></a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+      <a href="/faq.html">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap legal">
+  <div class="page-head">
+    <h1>Privacy Policy</h1>
+  </div>
+  <div class="page-body">
+    <p class="meta">
+      Last updated: <strong>August 17, 2026</strong> &nbsp;·&nbsp;
+      Effective date: <strong>August 17, 2026</strong>
+    </p>
+
+    <div class="highlight-box">
+      <p><strong>Plain-English summary:</strong> Re stores your supplement logs, wellness check-ins, and profile data on secure servers to power the app. We never sell your data. We never use your health data for advertising. HealthKit data stays on your device and is only used to compute in-app insights. You can export or delete everything at any time.</p>
+    </div>
+
+    <h2>1. Who We Are</h2>
+    <p>Re ("we," "us," "our") is a supplement tracking and wellness app operated by Devarshi Bhatt. If you have questions about this policy, contact us at <a href="mailto:privacy@myrewellness.com">privacy@myrewellness.com</a>.</p>
+    <p>This Privacy Policy explains what personal information we collect when you use the Re mobile application ("App"), how we use it, who we share it with, and the rights you have over it. By using the App, you agree to the practices described here.</p>
+
+    <h2>2. Information We Collect</h2>
+
+    <h3>2.1 Account Information</h3>
+    <p>When you create an account, we collect your <strong>email address</strong> and a <strong>hashed password</strong> (we never store your password in plain text). Authentication is handled by Supabase Auth.</p>
+
+    <h3>2.2 Profile Information</h3>
+    <p>For each profile you create in Re (your own or a family member's), we collect:</p>
+    <ul>
+      <li>Display name</li>
+      <li>Age and biological sex (optional — used to personalize RDA-based insights)</li>
+      <li>Health goals (optional — used to personalize the Insights tab)</li>
+      <li>Profile photo (optional — stored in Supabase Storage)</li>
+      <li>Relationship type (self, partner, parent, child, etc.)</li>
+    </ul>
+
+    <h3>2.3 Supplement and Schedule Data</h3>
+    <p>We store everything you enter about your supplements: name, brand, form, dose amount and unit, schedule (days and times), and whether the supplement is active.</p>
+
+    <h3>2.4 Daily Log Data</h3>
+    <p>Each time you log your supplements, we store:</p>
+    <ul>
+      <li>Whether each supplement was taken or skipped</li>
+      <li>The time it was taken (if logged)</li>
+      <li>Skip reason and any personal notes you add</li>
+      <li>The date of the log</li>
+    </ul>
+
+    <h3>2.5 Wellness Check-in Data</h3>
+    <p>When you complete a daily check-in, we store your self-reported scores for energy, focus, mood, sleep quality, sleep hours, any symptom tags you select, and any free-text notes you write. This data is used to compute correlations between your supplement habits and how you feel.</p>
+
+    <h3>2.6 Lab Results</h3>
+    <p>If you choose to enter lab results (blood tests, biomarker panels, etc.), we store the test name, result value, unit, date of the test, and lab name.</p>
+
+    <h3>2.7 Apple Health Data (Optional — iOS Only)</h3>
+    <p>If you choose to connect Apple Health, we read the following data types <strong>on your device</strong> to compute correlations on the Insights tab:</p>
+    <ul>
+      <li><strong>Steps</strong> — daily step count</li>
+      <li><strong>Sleep</strong> — sleep duration and staging</li>
+      <li><strong>Heart Rate</strong> — resting and average heart rate</li>
+      <li><strong>Heart Rate Variability (HRV)</strong></li>
+      <li><strong>Blood Oxygen (SpO₂)</strong></li>
+      <li><strong>Respiratory Rate</strong> — breaths per minute during sleep</li>
+    </ul>
+    <p><strong>This data is processed entirely on your device. It is never uploaded to our servers or shared with any third party.</strong> See Section 4 for Apple HealthKit-specific disclosures required by Apple.</p>
+
+    <h3>2.8 Usage and Crash Data</h3>
+    <p>We collect anonymous event data (e.g., "supplement logged," "check-in saved") through PostHog to understand how the app is used and improve it. We also use Sentry to collect crash reports, which may include device model, operating system version, app version, and the stack trace of the error. These do not contain your supplement or health data.</p>
+
+    <h2>3. How We Use Your Information</h2>
+    <table>
+      <thead>
+        <tr><th>Data</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Account data</td><td>Sign-in, authentication, account recovery</td></tr>
+        <tr><td>Profile data</td><td>Personalize RDA recommendations and insights</td></tr>
+        <tr><td>Supplement &amp; log data</td><td>Core app functionality — tracking adherence, streaks, history</td></tr>
+        <tr><td>Wellness check-in data</td><td>Compute correlations between supplement habits and wellness outcomes</td></tr>
+        <tr><td>Lab results</td><td>Display alongside supplement data; future deficiency analysis</td></tr>
+        <tr><td>Apple Health data</td><td>On-device correlation with supplement logs on the Insights tab <em>only</em></td></tr>
+        <tr><td>Usage events (PostHog)</td><td>Understand feature usage; improve the app</td></tr>
+        <tr><td>Crash data (Sentry)</td><td>Detect and fix bugs</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>We do not use any of your data for advertising, targeted marketing, or sale to third parties. We do not build advertising profiles. HealthKit data is never used for any purpose other than in-app insights.</strong></p>
+
+    <h2>4. Apple HealthKit Disclosure</h2>
+    <p>Re uses Apple's HealthKit framework on iOS. In compliance with Apple's guidelines, we disclose the following:</p>
+    <ul>
+      <li><strong>Data types read:</strong> Steps, Sleep, Heart Rate, HRV, Blood Oxygen, Respiratory Rate</li>
+      <li><strong>Purpose:</strong> Exclusively to compute correlations between your supplement intake and health metrics on the Insights tab within the App</li>
+      <li><strong>On-device only:</strong> HealthKit data is processed locally on your iPhone. It is never transmitted to our servers, never stored in our database, and never included in data exports</li>
+      <li><strong>Not used for advertising:</strong> HealthKit data is never used for advertising, marketing, or sold to or shared with third parties for any commercial purpose</li>
+      <li><strong>User control:</strong> You can revoke Re's access to Apple Health at any time via iOS Settings → Health → Data Access &amp; Devices → Re. Revoking access disables HealthKit-based correlations but does not affect any other app functionality</li>
+    </ul>
+
+    <h2>5. Multi-Profile and Caregiver Data</h2>
+    <p>Re supports multiple profiles, allowing you to track supplements for family members or people in your care. If you create profiles for others:</p>
+    <ul>
+      <li>You are responsible for obtaining that person's consent (or their parent/guardian's consent if they are a minor) before entering their health data</li>
+      <li>Their data is governed by this same Privacy Policy</li>
+      <li>Deleting your account will delete all profiles associated with it</li>
+    </ul>
+
+    <h2>6. Third Parties We Work With</h2>
+    <p>We share data with third parties only as described below. We do not sell personal information to third parties.</p>
+
+    <h3>6.1 Supabase</h3>
+    <p>We use <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a> as our database, authentication, and file storage provider. All app data (profiles, supplements, logs, check-ins, lab results) is stored on Supabase's infrastructure, hosted on Amazon Web Services (AWS) in the United States. Supabase processes data on our behalf under a <a href="https://supabase.com/legal/dpa" target="_blank" rel="noopener">Data Processing Addendum</a>. Supabase does not use your data for its own purposes.</p>
+
+    <h3>6.2 PostHog</h3>
+    <p>We use <a href="https://posthog.com" target="_blank" rel="noopener">PostHog</a> for product analytics. PostHog receives anonymous usage events (e.g., "supplement_taken," "checkin_saved") associated with an anonymous user ID. No supplement names, health scores, or personal profile data are included in these events. You can opt out of PostHog analytics by contacting us at <a href="mailto:privacy@myrewellness.com">privacy@myrewellness.com</a>.</p>
+
+    <h3>6.3 Sentry</h3>
+    <p>We use <a href="https://sentry.io" target="_blank" rel="noopener">Sentry</a> for crash reporting and error monitoring. Sentry receives crash reports that include device model, OS version, app version, and error stack traces. These do not contain your health, supplement, or profile data.</p>
+
+    <h3>6.4 NIH Dietary Supplement Label Database (DSLD)</h3>
+    <p>When you search for supplements, the App queries the <a href="https://dsld.od.nih.gov" target="_blank" rel="noopener">NIH DSLD API</a>. Only your search query text is sent to this API — no account or profile data is transmitted.</p>
+
+    <h3>6.5 Legal Disclosure</h3>
+    <p>We may disclose your information if required by law, court order, or governmental authority, or to protect the rights, property, or safety of Re, our users, or the public.</p>
+
+    <h2>7. Data Retention</h2>
+    <ul>
+      <li><strong>Active accounts:</strong> Your data is retained for as long as your account remains active.</li>
+      <li><strong>Deleted accounts:</strong> When you delete your account, your personal data is permanently deleted from our production database within <strong>30 days</strong>.</li>
+      <li><strong>Backups:</strong> Encrypted database backups may retain your data for up to <strong>30 additional days</strong> after deletion before being overwritten.</li>
+      <li><strong>Analytics events (PostHog):</strong> Anonymous event data may be retained for up to 2 years.</li>
+      <li><strong>Crash reports (Sentry):</strong> Retained for 90 days.</li>
+      <li><strong>Export before deletion:</strong> We strongly encourage you to export your data (Settings → Data &amp; Export) before deleting your account, as deletion is permanent and irreversible.</li>
+    </ul>
+
+    <h2>8. Your Rights and Choices</h2>
+    <p>You have the following controls over your data, available directly in the App:</p>
+    <ul>
+      <li><strong>Access &amp; Export:</strong> Export all your data at any time via Settings → Data &amp; Export (PDF, CSV, or JSON)</li>
+      <li><strong>Correct:</strong> Edit your profile, supplements, and logs directly in the App</li>
+      <li><strong>Delete your account:</strong> Settings → Account → Delete Account permanently deletes all your data</li>
+      <li><strong>Revoke HealthKit access:</strong> iOS Settings → Health → Data Access &amp; Devices → Re</li>
+      <li><strong>Notification opt-out:</strong> Settings → Notifications, or iOS Settings → Notifications → Re</li>
+      <li><strong>Analytics opt-out:</strong> Email <a href="mailto:privacy@myrewellness.com">privacy@myrewellness.com</a> to opt out of PostHog event tracking</li>
+    </ul>
+    <p>For requests we cannot fulfill in-app (such as requesting a copy of your data in a specific format), email <a href="mailto:privacy@myrewellness.com">privacy@myrewellness.com</a>. We will respond within <strong>30 days</strong>.</p>
+
+    <h2>9. Security</h2>
+    <p>We take reasonable technical and organizational measures to protect your data:</p>
+    <ul>
+      <li><strong>Encryption in transit:</strong> All data transmitted between the App and our servers uses HTTPS/TLS</li>
+      <li><strong>Encryption at rest:</strong> Supabase encrypts stored data using AES-256</li>
+      <li><strong>Row-Level Security (RLS):</strong> Database-level policies ensure each user can only access their own profiles' data — no cross-user data leakage is architecturally possible</li>
+      <li><strong>Authentication:</strong> Passwords are never stored in plain text; Supabase Auth handles secure password hashing</li>
+      <li><strong>HealthKit data:</strong> Never leaves your device</li>
+    </ul>
+    <p>No method of transmission or storage is 100% secure. If you believe your account has been compromised, contact us immediately at <a href="mailto:privacy@myrewellness.com">privacy@myrewellness.com</a>.</p>
+
+    <h2>10. Children's Privacy</h2>
+    <p>Re is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, contact us at <a href="mailto:privacy@myrewellness.com">privacy@myrewellness.com</a> and we will delete it promptly.</p>
+    <p>The multi-profile feature allows parents to track supplements for their children. In this case, the parent or guardian is the account holder and is responsible for the information entered.</p>
+
+    <h2>11. California Privacy Rights (CCPA / CPRA)</h2>
+    <p>If you are a California resident, you have the following rights under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA):</p>
+    <ul>
+      <li><strong>Right to Know:</strong> Request disclosure of the categories and specific pieces of personal information we have collected about you in the past 12 months</li>
+      <li><strong>Right to Delete:</strong> Request deletion of personal information we hold about you (subject to certain exceptions)</li>
+      <li><strong>Right to Correct:</strong> Request correction of inaccurate personal information</li>
+      <li><strong>Right to Opt Out of Sale/Sharing:</strong> We do not sell or share personal information for cross-context behavioral advertising. No opt-out is required, but you may contact us to confirm</li>
+      <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising any of these rights</li>
+    </ul>
+    <p>To exercise these rights, email <a href="mailto:privacy@myrewellness.com">privacy@myrewellness.com</a> with "California Privacy Request" in the subject line. We will respond within 45 days.</p>
+    <p><strong>Categories of personal information collected in the last 12 months:</strong> Identifiers (email), personal records (profile data), health and medical information (supplement logs, wellness check-ins, lab results), and internet/electronic activity (usage events, crash reports).</p>
+    <p><strong>We do not sell personal information. We do not share personal information for cross-context behavioral advertising.</strong></p>
+
+    <h2>12. Washington State Health Data Rights (My Health My Data Act)</h2>
+    <p>If you are a Washington State resident, the Washington My Health My Data Act (MHMDA) provides you with additional rights over "consumer health data," which includes your supplement logs, wellness check-in data, and lab results stored in Re.</p>
+    <ul>
+      <li><strong>Right to Access:</strong> Confirm whether we are collecting your consumer health data and access a copy</li>
+      <li><strong>Right to Delete:</strong> Request deletion of your consumer health data (use Settings → Account → Delete Account, or email us)</li>
+      <li><strong>Right to Withdraw Consent:</strong> Withdraw consent to the collection or sharing of your consumer health data at any time</li>
+      <li><strong>Right to a List of Third Parties:</strong> Request a list of third parties with whom we have shared your consumer health data (see Section 6 — we share with Supabase only, as infrastructure)</li>
+    </ul>
+    <p>To exercise these rights, email <a href="mailto:privacy@myrewellness.com">privacy@myrewellness.com</a> with "Washington Health Data Request" in the subject line. We will respond within 45 days.</p>
+    <p><strong>Consumer health data we collect:</strong> Supplement intake logs, wellness check-in scores and notes, symptom tags, and lab results you voluntarily enter. <strong>We do not sell consumer health data. We do not share consumer health data with third parties for advertising or marketing.</strong></p>
+
+    <h2>13. HIPAA Disclaimer</h2>
+    <p>Re is not a HIPAA covered entity and is not a business associate of any HIPAA covered entity. The App is not a medical device and does not provide medical advice, diagnosis, or treatment. Do not use Re as a substitute for professional medical care. Always consult a qualified healthcare provider before making changes to your supplement regimen.</p>
+
+    <h2>14. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we make material changes, we will notify you by:</p>
+    <ul>
+      <li>Posting a notice in the App on your next login, and/or</li>
+      <li>Sending an email to the address on your account</li>
+    </ul>
+    <p>We will provide at least <strong>30 days' notice</strong> before material changes take effect. The "Last updated" date at the top of this page always reflects the most recent version. Continued use of the App after the effective date constitutes acceptance of the updated policy.</p>
+
+    <h2>15. Contact Us</h2>
+    <p>For privacy questions, data requests, or to report a concern:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:privacy@myrewellness.com">privacy@myrewellness.com</a></li>
+      <li><strong>General:</strong> <a href="mailto:hello@myrewellness.com">hello@myrewellness.com</a></li>
+    </ul>
+    <p>We aim to respond to all privacy-related inquiries within <strong>30 days</strong>.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Re. <a href="mailto:hello@myrewellness.com">hello@myrewellness.com</a></p>
+    <nav>
+      <a href="/faq.html">FAQ</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
