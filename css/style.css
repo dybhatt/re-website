@@ -86,6 +86,7 @@ img { max-width: 100%; }
 
 /* page (faq / legal / blog post) */
 .page-head { padding: 52px 0 8px; }
+.page-head.tight { padding-top: 20px; }
 .page-head h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 5vw, 42px); margin: 0 0 10px; }
 .page-head p.dek { color: var(--ink-soft); font-size: 16px; max-width: 60ch; margin: 0; }
 .page-body { padding: 24px 0 80px; }
@@ -117,9 +118,40 @@ img { max-width: 100%; }
 .warning-box p { margin-bottom: 0 !important; color: var(--ink) !important; }
 
 /* blog post */
-.post-hero-img { width: 100%; aspect-ratio: 16/9; border-radius: 14px; background: var(--gradient); margin: 24px 0 8px; }
 .post-body p { font-size: 16px; color: var(--ink); max-width: 66ch; margin: 0 0 18px; }
 .post-body h2 { font-family: var(--serif); font-weight: 400; font-size: 22px; margin: 36px 0 12px; }
+
+/*
+ * Blog post header — finalized template (design handoff, 1400x480 reference frame).
+ * Full-bleed photo + bottom scrim + overline/headline overlay, two variants
+ * (Day / Sunset) tied to article mood, not literal time of day.
+ * No real photography supplied yet: the .bh-photo-placeholder gradient below
+ * stands in for it. Swap by replacing that div's background with
+ * background-image: url(...); background-size: cover; background-position: center;
+ * — everything else (scrim, type, radius) stays as-is.
+ */
+.blog-header { position: relative; width: 100%; aspect-ratio: 1400 / 480; border-radius: 20px; overflow: hidden; margin: 28px 0 6px; }
+.blog-header .bh-photo-placeholder { position: absolute; inset: 0; }
+.blog-header.day .bh-photo-placeholder { background:
+  radial-gradient(120% 90% at 15% 15%, rgba(255,200,87,0.55) 0%, transparent 55%),
+  radial-gradient(100% 80% at 85% 100%, rgba(255,107,139,0.35) 0%, transparent 60%),
+  linear-gradient(160deg, #FFE1C2 0%, #FFF1DE 55%, #FFF6EC 100%);
+}
+.blog-header.sunset .bh-photo-placeholder { background:
+  radial-gradient(120% 90% at 85% 10%, rgba(255,209,102,0.45) 0%, transparent 55%),
+  radial-gradient(110% 85% at 10% 100%, rgba(255,136,163,0.4) 0%, transparent 60%),
+  linear-gradient(160deg, #3D2430 0%, #2E1A22 100%);
+}
+.blog-header::after { content: ""; position: absolute; inset: 0; }
+.blog-header.day::after { background: linear-gradient(0deg, rgba(43,27,20,0.80) 0%, rgba(43,27,20,0.16) 60%, transparent 100%); }
+.blog-header.sunset::after { background: linear-gradient(0deg, rgba(46,26,34,0.82) 0%, rgba(46,26,34,0.18) 60%, transparent 100%); }
+.blog-header .bh-inner { position: absolute; left: 0; right: 0; bottom: 0; padding: clamp(18px, 4vw, 40px) clamp(18px, 4vw, 40px); z-index: 1; }
+.blog-header .bh-overline { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
+.blog-header.day .bh-overline { color: #FFC857; }
+.blog-header.sunset .bh-overline { color: #FFD166; }
+.blog-header .bh-headline { font-family: var(--serif); font-weight: 400; font-size: clamp(22px, 4.2vw, 34px); line-height: 1.15; max-width: 26ch; text-wrap: balance; }
+.blog-header.day .bh-headline { color: #FFF6EC; }
+.blog-header.sunset .bh-headline { color: #FFF3E6; }
 
 @media (max-width: 640px) {
   .feature-grid { grid-template-columns: 1fr; }
