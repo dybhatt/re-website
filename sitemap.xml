@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://myrewellness.com/</loc></url>
+  <url><loc>https://myrewellness.com/</loc><lastmod>2026-08-20</lastmod></url>
+  <url><loc>https://myrewellness.com/download.html</loc><lastmod>2026-08-20</lastmod></url>
+  <url><loc>https://myrewellness.com/features/caregiving.html</loc><lastmod>2026-08-20</lastmod></url>
+  <url><loc>https://myrewellness.com/features/fitness.html</loc><lastmod>2026-08-20</lastmod></url>
+  <url><loc>https://myrewellness.com/features/scan-insights.html</loc><lastmod>2026-08-20</lastmod></url>
+  <url><loc>https://myrewellness.com/features/teams.html</loc><lastmod>2026-08-20</lastmod></url>
   <url><loc>https://myrewellness.com/faq.html</loc></url>
   <url><loc>https://myrewellness.com/blog/</loc></url>
   <url><loc>https://myrewellness.com/blog/what-happens-if-you-miss-a-day.html</loc></url>
